@@ -43,14 +43,13 @@ body {
 }
 
 #downloadButton:hover {
-	background-color: rgba(36, 36, 36, 0.5);
+	background-color: rgba(36, 36, 36, 0.8);
 	box-shadow: -5px -9px 0px -5px white inset;
 }
  
 #infoButton {
 	border: 0;
     font-size: 1.3em;
-    /*background-color: darkslateblue;*/
     background-color: gold;
     padding: 10px;
     color: #242424;
@@ -59,10 +58,60 @@ body {
 }
 
 #infoButton:hover {
-	background-color: rgba(255, 215, 0, 0.6);
+	background-color: rgba(255, 215, 0, 0.8);
 	box-shadow: -5px -9px 0px -5px white inset;
 	color: #242424;
 }
+
+.about-app {
+	margin: 40px;
+}
+
+.app-has {
+	font-size: 3em; /* возможно не надо */
+	text-align: center
+}
+
+.app-tests {
+	display: grid;
+	grid-template-columns: 2fr auto 1fr;
+	border-bottom: 3px solid rgb(7,66,113);
+}
+
+.app-tests-num {
+	background: rgb(7,66,113);
+	background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
+	color: white;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.app-tests-list {
+	list-style-type: square;
+}
+
+/*.app-answers {
+	height: 300px;
+	background: rgb(7,66,113);
+	background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
+	display: grid;
+	align-items: center;
+	text-align: center;
+}
+
+.app-ratings {
+	height: 300px;
+	background: rgb(7,66,113);
+background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
+	display: grid;
+	align-items: center;
+	text-align: center;
+}*/
+
 
 /* моб. адаптация */
 @media only screen and (max-width: 800px) {
@@ -78,7 +127,25 @@ body {
 	.appDesc h1 {
 		font-size: 2em;
 	}
+	.app-has {
+		font-size: 2em;
+		margin-top: 1.5em;
+	}
 	#downloadButton, #infoButton {
 		font-size: 1.2em;
 	}
+	.app-tests-num {
+		height: 300px;
+	}
+	.about-app {
+		margin:0;
+	}
+	.app-tests {
+		display: block;
+		border-bottom: unset;
+	}
+	.app-tests-row2 {
+		margin-top: -15px;
+	}
+
 }
