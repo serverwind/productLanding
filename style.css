@@ -1,0 +1,84 @@
+/* стили, которые не пойдут в продакшн */
+body {
+	margin: 0;
+}
+
+/* в продакшн */
+
+.appWrapper {
+	min-height: 86vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	background-image: url('img/screen.png');
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: right;
+	background-color: #287abc;
+}
+
+.appDesc {
+	/* margin: 40px 0 0 40px; */ 
+	margin-left: 40px;
+}
+
+.appDesc h1 {
+	font-size: 3em; /* возможно не обязательно */
+	color: #e6e3d0; 
+}
+
+.appDesc p {
+	font-size: 1.2em; /* возможно не обязательно */
+	color: #e6e3d0;
+}
+
+#downloadButton {
+	border: 0;
+    font-size: 1.3em;
+    background-color: #242424;
+    padding: 10px;
+    color: gold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#downloadButton:hover {
+	background-color: rgba(36, 36, 36, 0.5);
+	box-shadow: -5px -9px 0px -5px white inset;
+}
+
+#infoButton {
+	border: 0;
+    font-size: 1.3em;
+    /*background-color: darkslateblue;*/
+    background-color: gold;
+    padding: 10px;
+    color: #242424;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#infoButton:hover {
+	background-color: rgba(255, 215, 0, 0.6);
+	box-shadow: -5px -9px 0px -5px white inset;
+	color: #242424;
+}
+
+/* моб. адаптация */
+@media only screen and (max-width: 800px) {
+	.appWrapper {
+		min-height: auto;
+		grid-template-columns: 1fr;
+		background-image: unset;
+	} 
+	.appDesc {
+		margin: 0;
+		padding: 20px 10px 20px 10px;
+	}
+	.appDesc h1 {
+		font-size: 2em;
+	}
+	#downloadButton, #infoButton {
+		font-size: 1.2em;
+	}
+}
