@@ -178,7 +178,7 @@ body {
 }
 
 .app-donations {
-	margin-left: 40px;
+	margin: 0 40px 0 40px;
 }
 
 
@@ -236,5 +236,15 @@ body {
 	.app-screens img {
 		margin-bottom: 10px;
 	}
-
+	.app-download {
+		display: block;
+		margin: 0;
+		padding: 40px;
+	}
+	.link-download-tor {
+		margin-top: 10px;
+	}
+	.app-donations {
+		margin: 10px;
+	}
 }
