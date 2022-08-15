@@ -177,6 +177,10 @@ body {
 	color: #242424;
 }
 
+.app-donations {
+	margin-left: 40px;
+}
+
 
 /* моб. адаптация */
 @media only screen and (max-width: 800px) {
