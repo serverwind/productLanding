@@ -126,6 +126,56 @@ body {
 	width: 100%;
 }
 
+.app-download {
+	margin-top: 40px;
+	padding-left: 40px;
+	background-color: #287abc;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	color: #e6e3d0; 
+}
+
+.app-download h2 {
+	font-size: 3em;
+}
+
+.link-download-srv {
+    border: 0;
+    background: #242424;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.link-download-srv:hover {
+	background-color: rgba(36, 36, 36, 0.8);
+	box-shadow: -5px -9px 0px -5px white inset;
+}
+
+.link-download-srv a {
+	text-decoration: none;
+	color: #e6e3d0; 
+	font-size: 1.5em;
+}
+
+.link-download-tor {
+	border: 0;
+    background-color: gold;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.link-download-tor a {
+	text-decoration: none;
+	color: #242424; 
+	font-size: 1.5em;
+}
+
+.link-download-tor:hover {
+	background-color: rgba(255, 215, 0, 0.8);
+	box-shadow: -5px -9px 0px -5px white inset;
+	color: #242424;
+}
 
 
 /* моб. адаптация */
