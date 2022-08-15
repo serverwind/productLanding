@@ -63,6 +63,22 @@ body {
 	color: #242424;
 }
 
+.app-info {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	margin-left: 40px;
+	gap: 40px;
+}
+
+.app-img img {
+	max-width: 300px;
+}
+
+.sys-req-h3 {
+	margin-top: 0;
+	font-size: 1.8em;
+}
+
 .about-app {
 	margin: 40px;
 }
@@ -94,23 +110,7 @@ body {
 	list-style-type: square;
 }
 
-/*.app-answers {
-	height: 300px;
-	background: rgb(7,66,113);
-	background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
-	display: grid;
-	align-items: center;
-	text-align: center;
-}
 
-.app-ratings {
-	height: 300px;
-	background: rgb(7,66,113);
-background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
-	display: grid;
-	align-items: center;
-	text-align: center;
-}*/
 
 
 /* моб. адаптация */
@@ -146,6 +146,16 @@ background: linear-gradient(0deg, rgba(7,66,113,1) 0%, rgba(40,122,188,1) 100%);
 	}
 	.app-tests-row2 {
 		margin-top: -15px;
+	}
+	.app-info {
+		display: block;
+		margin: 0;
+	}
+	.sys-req {
+		margin: 10px;
+	}
+	.app-img img {
+		max-width: 100%;
 	}
 
 }
