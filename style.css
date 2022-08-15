@@ -42,6 +42,11 @@ body {
     transition: 0.5s;
 }
 
+#downloadButton a {
+	text-decoration: none;
+	color: gold;
+}
+
 #downloadButton:hover {
 	background-color: rgba(36, 36, 36, 0.8);
 	box-shadow: -5px -9px 0px -5px white inset;
@@ -55,6 +60,11 @@ body {
     color: #242424;
     cursor: pointer;
     transition: 0.5s;
+}
+
+#infoButton a {
+	text-decoration: none;
+	color: #242424;
 }
 
 #infoButton:hover {
