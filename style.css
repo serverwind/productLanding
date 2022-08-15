@@ -110,6 +110,21 @@ body {
 	list-style-type: square;
 }
 
+.app-screens {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 5px;
+	margin: 0 40px 0 40px;
+}
+
+.app-screens-header {
+	font-size: 2em;
+	margin-left: 40px;
+}
+
+.app-screens img {
+	width: 100%;
+}
 
 
 
@@ -156,6 +171,16 @@ body {
 	}
 	.app-img img {
 		max-width: 100%;
+	}
+	.app-screens {
+		display: block;
+		margin: 0;
+	}
+	.app-screens-header {
+		margin-left: 10px;
+	}
+	.app-screens img {
+		margin-bottom: 10px;
 	}
 
 }
